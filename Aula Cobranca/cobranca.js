@@ -110,3 +110,6 @@ j
 */
 
 
+function enviarAlerta(){
+	alert('Teste Alerta Veronica');
+}
