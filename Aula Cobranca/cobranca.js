@@ -55,21 +55,22 @@ function enviarEmail(usuario)
 	+ usuario.email);
 }
 
-// function enviarCobranca()
-// {	
-	// let usuarios = retornarUsuarios();
-	// let tamanho = usuarios.length;	
+	function enviarCobrancaTeste()
+	{	
+	 let usuarios = retornarUsuarios();
+	 let tamanho = usuarios.length;	
+
+	//Loop normal	
+	for (let i = 0; i < tamanho ; i++)
+	{
+		 if (usuarios[i].saldoDevedor < 0)
+		{			
+			//envio de email
+			enviarEmail(usuarios[i]);
+		 }
+	 }
+	}
 	
-	// //Loop normal	
-	// for (let i = 0; i < tamanho ; i++)
-	// {
-		// if (usuarios[i].saldoDevedor < 0)
-		// {			
-			// //envio de email
-			// enviarEmail(usuarios[i]);
-		// }
-	// }
-// }
 
 function enviarCobranca()
 {	
@@ -107,3 +108,5 @@ usuarios
 usuarios[i].produtos[j]
 j
 */
+
+
